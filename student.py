@@ -1,11 +1,7 @@
 #******************************************************************************
 # student.py
 #******************************************************************************
-# Name: Eduardo Esteves
-#******************************************************************************
-# Overall notes (not to replace inline comments):
-#
-#
+# Eduardo E
 
 #create the class
 class Student:
@@ -14,9 +10,9 @@ class Student:
         self._name = name
         self._scores = scores
         
-        #methos for saverage of scores
+        # Method for average of scores
     def average(self):
-        #if the list for scores is empty counter = 1 to prevent 0/0
+        #if the list for scores is empty, counter = 1 to prevent 0/0
         if len(self._scores) != 0:
             counter = 0
         else:
@@ -31,7 +27,7 @@ class Student:
     def display(self):
         aver = self.average()
         print(f'{self._name}, Average: {aver}')
-    #method returns boolian depending depnding on player's score    
+    #method returns boolean depending on the player's score    
     def passes(self):
         return self.average() >+ 60
     
@@ -87,6 +83,7 @@ def main():
 
     
 main()    
+
 
 
 
